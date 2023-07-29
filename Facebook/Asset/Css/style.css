@@ -1,0 +1,832 @@
+/********** Fonts **********/
+
+@font-face {
+    font-family: "Segoe UI Historic", sans-serif;
+    src: url(../Fonts/Segoe\ ui\ historic.ttf);
+}
+
+
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "Segoe UI Historic", sans-serif;
+}
+
+
+
+/******** Default Css ********/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align-last: center;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
+
+/*********** All Color *********/
+:root {
+    --icon-color: #65676b; 
+    --bg-color: #f0f2f5;
+    --hover-bg-color:#E4E6E8;
+    --hover-button: #F2F2F2;
+    --primary-color: #1876f2;
+    --font-color: #050505;
+}
+
+
+
+
+/********* Header *********/
+
+header{
+    padding: 5px 14px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%), 0 0px 0px rgb(0 0 0 / 10%);
+}
+
+
+/********* Header Left Start *********/
+
+
+.header-left{
+    width: 25%;
+    margin-top: 5px;
+}
+
+.header-left img{
+    width: 40px;
+}
+.header-left form .search{
+    font-size: 15px;
+    color: var(--icon-color);
+    position: relative;
+    left: 10px;
+    top: 0;
+}
+
+.header-left form{
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.header-left form input{
+    width: 240px;
+    outline: none;
+    background:var(--bg-color);
+    font-size: 15px;
+    padding: 12px 10px 12px 35px;
+    margin-left: -20px;
+    border: none;
+    border-radius: 50px;
+}
+
+/********* Header Left End *********/
+
+
+/********* Header Middle Start *********/
+
+.header-middle{
+    margin-left: 30px;
+}
+
+.header-middle ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.header-middle ul li a{
+    display: inline-block;
+    color: var(--icon-color);
+    padding: 8px 40px;
+    border-radius: 8px;
+}
+
+.header-middle ul li:first-child a{
+    color: var(--primary-color);
+}
+
+.header-middle ul li:first-child a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-color);
+}
+
+.header-middle ul li a:hover{
+    background-color: var(--hover-button);
+    transition: .3s;
+}
+
+/********* Header Middle End *********/
+
+
+/********* Header Right Start *********/
+
+.header-right ul{
+    margin-top: -13px;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin: 0 3px;
+    
+}
+
+.header-right ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background-color:var(--hover-bg-color);
+    color: var(--font-color);
+    font-size: 19px;
+    display: inline-block;
+}
+
+.header-right ul li img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: 13px;
+    cursor: pointer;
+}
+
+/********* Header Right End *********/
+
+
+/******** Main Body Starts ********/
+
+.main-body{
+    background-color: var(--bg-color);
+    padding: 25px 0 0 0;
+}
+
+.fixed-width{
+    max-width: 1340px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+/*********Left Sidbar Starts ***********/
+
+.left-sidebar{
+    width: 25%;
+}
+
+.left-sidebar .image-box{
+    width: 100%;
+    padding: 8px;
+}
+.left-sidebar .image-box .img{
+    width: 15%;
+}
+.left-sidebar .image-box .img img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.left-sidebar .text{
+    width: 85%;
+    font-size: 15px;
+    margin-top: 2px;
+    color: var(--font-color);
+}
+
+
+.left-sidebar .image-box:hover{
+    background-color: var(--hover-bg-color);
+    transition: .2s;
+    border-radius: 5px;
+}
+
+
+/********* Left Sidbar End ***********/
+
+
+
+/********* Middle Body Starts ***********/
+
+.middle-body{
+    width: 50%;
+}
+
+.middle-box{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%), 0 0px 0px rgb(0 0 0 / 10%);
+}
+
+/*********Story Box Start ***********/
+
+.story-body{
+    width: 100%;
+    margin: auto;
+
+}
+.story-body .story-menu{
+    border-bottom: 1px solid var(--hover-bg-color);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.story-body .story-menu li{
+    display: inline-block;
+    position: relative;
+}
+
+.story-body .story-menu li a span{
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px
+}
+
+.story-body .story-menu li a{
+    display: inline-block;
+    color: var(--icon-color);
+    padding: 8px 36px 12px 36px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.story-body .story-menu li:first-child a{
+    color: var(--primary-color);
+}
+
+.story-body .story-menu li:first-child a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-color);
+}
+
+.story-body .story-menu li a:hover{
+    background-color: #F0F2F5;
+    transition: .3s;
+}
+
+.story-box{
+    padding: 15px;
+
+}
+
+/********** Creat Story *********/
+
+.creat-story{
+    width: 23%;
+    height: 200px;
+    margin: 0 1%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%), 0 0px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.creat-story .creat-story-img{
+    background: url(../Img/profile.jpg);
+    background-size: 125%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    transition: .3s; 
+    position: relative;
+    
+}
+
+.story-item-img::after,
+.creat-story-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+
+.creat-story:hover .creat-story-img{
+    background-size: 130%; 
+}
+
+.creat-story-plus{
+    height: 40px;
+    width: 40px;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 5px solid #fff;
+    text-align: center;
+    position: relative;
+    top:-20px ;
+    left:35px ;
+}
+
+.creat-story-plus span{
+    font-size: 20px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.creat-story p{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.story-item{
+    width: 23%;
+    margin: 0 1%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+    position: relative;
+}
+
+.story-item-img{
+    height: 200px;
+    width: 100%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s; 
+    position: relative;
+}
+
+.story-item-img:hover{
+    background-size: 120%;
+}
+
+.story-item-author{
+    height: 40px;
+    width: 40px;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color); 
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.story-item p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/*********Story Box End ***********/
+
+
+/*********Create Post Start ***********/
+
+.write-post{
+    padding: 10px 15px;
+}
+.write-post-header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hover-bg-color);
+}
+
+.author-img{
+    width:10%;
+    margin-bottom: -3px;
+}
+
+.author-img img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.write-post-form{
+    width: 90%;
+}
+
+.write-post-form .m-btn{
+    width: 100%;
+    outline: none;
+    border: none;
+    background:var(--bg-color);
+    color: var(--icon-color);
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 17px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.write-post-form .m-btn:hover{
+    background:var(--hover-bg-color);
+    color: var(--icon-color);
+}
+
+
+/***** Create post Modal *****/
+.post-modal-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font-color);
+    width: 100%;
+}
+
+.create-post-modal .modal-content .btn-close{
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--font-color) !important;
+    background-color: var(--hover-bg-color);
+}
+
+.create-post-modal .modal-content .btn-close:hover{
+    color: var(--font-color) !important;
+    background-color: var(--hover-button);
+}
+
+.create-post-author{
+    padding-bottom: 16px;
+}
+
+.create-post-author p{
+    font-size: 15px;
+    color: var(--font-color);
+    margin-bottom: 0;
+}
+
+.post-audience span{
+    background-color: var(--hover-bg-color);
+    padding: 1px 8px 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.create-post-content textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 24px;
+    color: var(--font-color);
+} 
+.create-post-content .post-img-btn{
+    border: 1px solid #ced0d4;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-content .post-img-btn div div{
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    margin-left: 3px;
+}
+
+.create-post-content .post-img-btn div div:hover{
+    background-color: var(--hover-button);
+}
+
+.add-your-post{
+    border-radius: 8px;
+    background-color: #fff;
+    width: 500px;
+    height: 430px;
+    box-shadow:0 0px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top: -142px;
+    left: -16px;
+    display: none;
+}
+
+.add-post-header h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.add-post-header{
+    position: relative;
+    padding: 16px;
+    border-bottom:1px solid #ced0d4 ;
+}
+
+.add-post-header button{
+    background-color: var(--hover-button);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.create-post-content{
+    position: relative;
+}
+
+.add-post-body{
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+.add-post-body p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--font-color);
+}
+
+.add-post-body input{
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: var(--font-color);
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+
+.post-submit-btn{
+    width: 100%;
+    background-color: var(--hover-bg-color);
+    color: #BCC0C4;
+    font-size: 15px;
+    padding: 8px 0;
+    margin-top: 20px;
+}
+
+.post-submit-btn:hover{
+    background-color: var(--hover-bg-color);
+    color: #BCC0C4;
+    /* cursor: not-allowed; */
+}
+
+
+
+
+
+
+
+.post-files{
+    display: flex;
+    margin-top: 8px;
+}
+
+.post-file-item{
+    display: flex;
+    width: 33.3%;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-file-item:hover{
+    background-color: var(--hover-button);
+}
+
+.post-file-item p{
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: var(--icon-color);
+}
+
+/*********Create Post End ***********/
+
+
+/********* Post Section Start ***********/
+
+.post-author{
+    display: flex;
+    padding: 12px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-author-left{
+    width: 90%;
+    display: flex;
+}
+
+
+.post-author-img{
+    width:10%;
+    margin-right: 10px;
+}
+
+.post-author-img img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-author-name a{
+    font-size: 15px;
+    color: var(--font-color);
+}
+
+.post-author-name a:hover{
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+.post-time-ago{
+    font-size: 13px;
+    color: var(--icon-color);
+    display: flex;
+    align-items: center;
+}
+
+.post-author-name  svg{
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.post_more_btn{
+    width: 10%;
+    text-align: center;
+}
+
+.post_more_btn span{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--icon-color);
+    font-size: 15px;
+}
+
+.post_more_btn span:hover{
+    background-color: var(--hover-button);
+}
+
+.post-content .post-text{
+    font-size: 15px;
+    color: var(--font-color);
+    padding: 0px 15px 12px 15px;
+}
+
+.post-image img{
+    width: 100%;
+    border-top:1px solid var(--hover-bg-color);
+    border-bottom:1px solid var(--hover-bg-color);
+}
+
+.post-reaction{
+    padding: 0 15px;
+}
+
+.like-comment{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--hover-bg-color);
+}
+
+.post-like .like-img{
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.like-img .react {
+    margin-right: -4px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 2;
+}
+
+.like-img .thumb {
+    border-radius: 50%;
+    border: 2px solid #ffffff00;
+}
+
+.like-img span{
+    margin-left: 5px;
+}
+
+.post-comment{
+    font-size: 15px;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.post-comment:hover{
+    text-decoration: underline;
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.post-footer-button{
+    text-align: center;
+    width: 33.3%;
+    font-size: 15px;
+    padding: 5px 0;
+    color: var(--icon-color);
+    transition: .2s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-footer-button:hover{
+    background-color: var(--hover-button);
+}
+
+.post-footer-button span{
+    margin-right: 5px;
+}
+
+/********* Post Section End ***********/
+
+
+/*********Middle Body End ***********/
+
+
+
+
+
+
+
+
+
+
