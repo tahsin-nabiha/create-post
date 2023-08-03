@@ -123,6 +123,10 @@ header{
     margin-left: 30px;
 }
 
+.header-middle ul{
+    margin-bottom: 0;
+}
+
 .header-middle ul li{
     display: inline-block;
     position: relative;
@@ -160,7 +164,8 @@ header{
 /********* Header Right Start *********/
 
 .header-right ul{
-    margin-top: -13px;
+    margin: 0px;
+    margin-top: 4px;
 }
 
 .header-right ul li {
@@ -187,7 +192,7 @@ header{
     object-fit: cover;
     border-radius: 50%;
     position: relative;
-    top: 13px;
+    top: 0px;
     cursor: pointer;
 }
 
@@ -820,11 +825,6 @@ header{
 
 
 /*********Middle Body End ***********/
-
-
-
-
-
 
 
 
