@@ -50,7 +50,7 @@ function timeAgo(date) {
       { name: "d", seconds: 86400 },
       { name: "h", seconds: 3600 },
       { name: "min", seconds: 60 },
-      { name: "S", seconds: 1 },
+      { name: "sec", seconds: 1 },
     ];
   
     let timeAgoString = "Just now";
@@ -59,7 +59,7 @@ function timeAgo(date) {
       const interval = intervals[i];
       const intervalCount = Math.floor(secondsAgo / interval.seconds);
       if (intervalCount >= 1) {
-        timeAgoString = `${intervalCount} ${interval.name} ago`;
+        timeAgoString = `${intervalCount}${interval.name}`;
         break; // Break the loop once the correct interval is found
       }
     }
