@@ -428,7 +428,6 @@ li{
     width: 55px;
     border: 1px solid var(--border);
     border-radius: 50%;
-    margin-top: 10px;
 }
 
 .s-profile a,
@@ -461,6 +460,7 @@ li{
 
 .profile-info p{
     color: var(--hover-icon);
+    margin-bottom: 0;
 }
 
 .suggested{
@@ -480,13 +480,13 @@ li{
     height: 32px;
     width: 32px;
     border: 1px solid var(--border);
-    border-radius: 50%; 
-    margin-top: 5px;
+    border-radius: 50%;
 }
 
 .s-profile-info p{
     color:var(--hover-icon) ;
     font-size: 12px;
+    margin-bottom: 0;
 }
 
 .s-title{
