@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!---------- Font Awesome  ( 5.15.4 ) --------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-------- Bootstrap ------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!----------- My CSS ----------->
     <link rel="stylesheet" href="./Asset/CSS/style.css">
 </head>
@@ -31,7 +33,7 @@
             </div>
 
             <!---------- Sidebar Menu Start ---------->
-            <div class="menu">
+            <div class="menu mt-3">
 
                 <div class="menu-item ">
                     <a href="#">
@@ -94,7 +96,7 @@
                     </a>
                 </div>
                 <div class="menu-item ">
-                    <a href="#">
+                    <a href="#" type="button" class="btn create_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="menu-img ">
                             <svg aria-label="New post" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
                         </div>
@@ -103,6 +105,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="menu-item ">
                     <a href="#">
                         <div class="menu-img menu-profile-img">
@@ -126,9 +129,54 @@
 
             </div>
             <!---------- Sidebar Menu End ---------->
+
+
             </div>
         </div>
         <!------------ Left sidebar End ----------->
+
+
+        <!-- Create Post Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header px-3 py-0">
+                    <button type="button" class="btn px-0"><i class="fas fa-arrow-left"></i></button>   
+                    <h1 class="modal-title fs-5  w-100 text-center" id="exampleModalLabel">Create new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex p-0">
+                    <div class="post-preview-img w-50">
+                        <img  src="https://images.vexels.com/media/users/3/131734/isolated/preview/05d86a9b63d1930d6298b27081ddc345-photo-preview-frame-icon.png" alt="">
+                    </div>
+                    <div class="post-text-content w-50">
+                        
+                        <div class="d-flex align-items-center create_post_profile mt-3">
+                            <img src="./Asset/img/insta profile.jpg"  alt="">
+                            <p class="m-0">nabihatahsin221</p>
+                        </div>
+
+                        <form action="" class="form">
+                            <textarea name="post_text" id="" rows="5" placeholder="Write a caption..."></textarea>
+                            <div class="d-flex justify-content-between px-2">
+                                <i class="far fa-smile"></i>
+                                <p class="post_text_count">0/2,200</p>
+                            </div>
+                            <div class="msg px-1"></div>
+                            <input class="f-value" type="text" placeholder="Author Name" name="author_name">
+                            <input class="f-value" type="text" placeholder="Author Photo link" name="author_photo">
+                            <input class="f-value" type="text" placeholder="Post Photo link" name="post_photo">
+                            <input class="f-value" type="text" placeholder="Post Location" name="post_location">
+                            <input class="f-value" type="text" placeholder="Post Tag" name="post_tag">
+                            <button type="submit" class="btn btn-submit"> share </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
 
 
 
@@ -139,118 +187,12 @@
             <div class="post-section">
                 <div style="width: 630px; ">
                     <div class="post-container">
-                        <!------- Post Header ------>
-                        <div class="post-header">
-                            <div class="author">
-                                <div class="author-profile-img">
-                                    <img src="./Asset/img/taylor.jpg" alt="">
-                                </div>
-                                <div class="post-author-name">
-                                    <a href="#">taylorswift</a>
-                                    <span><i class="fas fa-circle"></i> 1w</span>
-                                    <a href="#"></a>
-                                    <p>Costa Titch, Champuru Makhenzo</p>
-                                </div>
-                            </div>
-                            <div class="three-dot">
-                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                            </div>
-                        </div>
-    
-                        <!------ Post Body ------>
-                        <div class="post-body">
-                            <div class="post-img">
-                                <img src="./Asset/img/post 1.jpg" alt="">
-                            </div>
-                            <div class="post-reaction">
-                                <div class="p-reaction-left">
-                                    <div class="post-like post-icon">
-                                        <span><i class="far fa-heart"></i></span>
-                                    </div>
-                                    <div class="post-comment post-icon">
-                                        <span><i class="far fa-comment"></i></span>
-                                    </div>
-                                    <div class="post-share post-icon">
-                                        <span><i class="far fa-paper-plane"></i></span>
-                                    </div>
-                                </div>
-                                <div class="post-save post-icon">
-                                    <span><i class="far fa-bookmark"></i></span>
-                                </div>
-                            </div>
-                            <div class="post-like-total">
-                                <p>5,691,354 likes</p>
-                            </div>
-                            <div class="post-content">
-                                <p> <a href="#">taylorswift</a>Cincinnati I couldn't love you more. Had the best two nights with you!!  <a href="#" class="post-tag">@taylorehill / @gettyimages</a></p>
-                            </div>
-                            <div class="write-comment">
-                                <p>View all 204 comments</p>
-                                <form action="#">
-                                    <input type="text" name="" id="" placeholder="Add a comment…">
-                                </form>
-                                <span><i class="far fa-smile"></i></span>
-                            </div>
-                        </div>    
+                           
                         
                     </div>
-                    <div class="post-container">
-                        <!------- Post Header ------>
-                        <div class="post-header">
-                            <div class="author">
-                                <div class="author-profile-img">
-                                    <img src="./Asset/img/messi.jpg" alt="">
-                                </div>
-                                <div class="post-author-name">
-                                    <a href="#">leomessi</a>
-                                    <span><i class="fas fa-circle"></i> 1w</span>
-                                    <a href="#"></a>
-                                    <p>Rosario, Argentina</p>
-                                </div>
-                            </div>
-                            <div class="three-dot">
-                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                            </div>
-                        </div>
-    
-                        <!------ Post Body ------>
-                        <div class="post-body">
-                            <div class="post-img">
-                                <img src="./Asset/img/post 2.jpg" alt="">
-                            </div>
-                            <div class="post-reaction">
-                                <div class="p-reaction-left">
-                                    <div class="post-like post-icon">
-                                        <span><i class="far fa-heart"></i></span>
-                                    </div>
-                                    <div class="post-comment post-icon">
-                                        <span><i class="far fa-comment"></i></span>
-                                    </div>
-                                    <div class="post-share post-icon">
-                                        <span><i class="far fa-paper-plane"></i></span>
-                                    </div>
-                                </div>
-                                <div class="post-save post-icon">
-                                    <span><i class="far fa-bookmark"></i></span>
-                                </div>
-                            </div>
-                            <div class="post-like-total">
-                                <p> 20,028,910 likes</p>
-                            </div>
-                            <div class="post-content">
-                                <p> <a href="#">leomessi</a>Muchas gracias por todas las felicitaciones!!  <a href="#" class="post-tag"></a></p>
-                            </div>
-                            <div class="write-comment">
-                                <p>View all 176k comments</p>
-                                <form action="#">
-                                    <input type="text" name="" id="" placeholder="Add a comment…">
-                                </form>
-                                <span><i class="far fa-smile"></i></span>
-                            </div>
-                        </div>    
-                        
-                    </div>
-
+                      
+                    
+                    
                 </div>
             </div>
             <!---------- Post Section End --------->
@@ -380,6 +322,11 @@
     <!--------- Body END -------->
 
 
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!---------- Js Link --------->
     <script src="./App/data.js"></script>
     <script src="./App/function.js"></script>
