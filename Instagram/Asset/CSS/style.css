@@ -40,6 +40,14 @@ li{
     text-align-last: center;
 }
 
+.btn{
+    outline: none;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
 
 
 /******* All Color ********/
@@ -74,6 +82,7 @@ li{
     top: 0;
     left: 0;
     width: 240px;
+    height: 100%;
     z-index: 99;
     padding: 10px 12px;
     background-color: var(--bg-color);
@@ -111,9 +120,12 @@ li{
     margin-top: 2px;
 }
 
+.menu .menu-item .menu-text p{
+    margin-bottom: 0;
+}
+
 .menu .menu-item:first-child .menu-text{
     font-weight: 500;
-    
 }
 
 .menu-profile-img img{
@@ -121,6 +133,84 @@ li{
     width: 25px;
     border: 1px solid var(--border);
     border-radius: 50%;
+}
+
+/* Create post Modal */
+.modal-content{
+    width: 730px !important;
+}
+
+.modal-header h1{
+    font-size: 16px !important;
+}
+
+.modal-header {
+    position: relative;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    top: -12%;
+    right: -25%;
+}
+
+.post-preview-img{
+    border-right: 1px solid var(--border) ;
+    text-align: center;
+}
+.post-preview-img img{
+    max-height: 460px;
+    object-fit: cover;
+}
+
+.create_post_profile img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.post-text-content .form textarea{
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.post-text-content .form textarea::placeholder { 
+    color: var(--border);
+  }
+.post-text-content .form input{
+    outline: none;
+    border: none;
+    border-top: 1px solid var(--border);
+    width: 100%;
+    padding: 10px;
+}
+.post-text-content .form input:last-child{
+    border-bottom: 1px solid var(--border);
+}
+.form i{
+    color: var(--hover-icon);
+    font-size: 16px;
+} 
+.post_text_count{
+    color: var(--hover-icon);
+    font-size: 12px;
+} 
+.form .btn-submit {
+    color: RGB(0, 149, 246);
+    padding: 0 2px;
+    position: absolute;
+    top: -32px;
+    right: 10px;
+}
+.form .btn-submit:hover{
+    color: RGB(0, 55, 107);
 }
 
 /*********** Left sidebar End **********/
@@ -168,7 +258,6 @@ li{
 
 .author-profile-img{
     width: 10%;
-    margin-bottom: -8px;
 }
 
 .author-profile-img img{
@@ -201,7 +290,7 @@ li{
 
 .post-author-name p{
     font-size: 12px;
-    margin-top: 4px;
+    margin-bottom: 0;
     cursor: pointer;
 }
 
@@ -225,6 +314,7 @@ li{
 .post-img img{
     width: 100%;
     border-radius: 4px;
+    box-shadow: 0px 0px 2px #00000022;
 }
 
 .post-reaction{
